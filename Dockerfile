@@ -1,7 +1,6 @@
 FROM ubuntu:latest
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install openjdk-11-jdk wget
-ENTRYPOINT [“apt”, “install”, “git”, “-y”]
+RUN apt-get -y install openjdk-11-jdk wget git
 RUN git clone https://github.com/Hariteja82/tomcat-Dockerfile.git
 RUN mkdir /usr/local/
 RUN wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.100/bin/apache-tomcat-9.0.100.tar.gz
