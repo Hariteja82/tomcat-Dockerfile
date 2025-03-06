@@ -1,0 +1,11 @@
+Docker install in UBUNTU:
+
+sudo apt-get update
+sudo apt-get install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo docker run hello-world
+docker --version
+
+vi Dockerfile
+docker build -t tomcat:1 .
