@@ -10,5 +10,5 @@ RUN mv /root/tomcat-Dockerfile/host/context.xml /usr/local/tomcat/webapps/host-m
 RUN mv /root/tomcat-Dockerfile/manager/context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
 RUN mv /root/tomcat-Dockerfile/tomcat-users.xml  /usr/local/tomcat/conf/tomcat-users.xml
 EXPOSE 8080
-CMD /usr/local/tomcat/bin/
+CMD cd /usr/local/tomcat/bin/
 CMD ./startup.sh
